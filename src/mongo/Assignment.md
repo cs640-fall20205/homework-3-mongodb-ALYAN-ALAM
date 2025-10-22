@@ -21,7 +21,7 @@ https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/
 
 2. Look up how to construct regular expressions in Mongo. Provide the URL.
 
-
+https://www.mongodb.com/docs/manual/reference/operator/query/regex/
 
 
 3. Acquaint yourself with command-line db.help() and db.collections.help() output.
