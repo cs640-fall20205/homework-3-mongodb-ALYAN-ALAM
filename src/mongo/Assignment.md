@@ -27,12 +27,13 @@ https://www.mongodb.com/docs/manual/reference/operator/query/regex/
 3. Acquaint yourself with command-line db.help() and db.collections.help() output.
     Nothing to provide.
 
-
+Done
 
 4. Find a Mongo driver in your programming language of choice (Ruby, Java,
     PHP, Go, Elixir, and so on). Provide URL to list of drivers/libraries for
     different languages.
 
+https://www.mongodb.com/docs/languages/python/pymongo-driver/current/
 
 ## Part 3 (15 pts): Create and populate a database to hold library books and patrons.
 For each of the steps below, provide the mongodb code that accomplishes this. Store your work in a folder called “Library”.
