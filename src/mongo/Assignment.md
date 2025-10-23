@@ -208,6 +208,11 @@ db.patrons.find( { fines: { $gt: 0 } }, { name: 1, _id: 0 } );
 
 4. Write a query to find the names and membership date of all patrons who became members in the year 2024.
 
+```
+db.patrons.find( { membershipDate: { $gte: new Date("2024-01-01"), $lt: new Date("2025-01-01") } }, { name: 1, membershipDate: 1, _id: 0 } );
+```
+![alt text](image-4.png)
+
 Hint: Use $gte and $lt operators to specify a date range from January 1, 2024 to January 1, 2025.
 
 ## Part 4 (10 pts): Day 2 - Do
