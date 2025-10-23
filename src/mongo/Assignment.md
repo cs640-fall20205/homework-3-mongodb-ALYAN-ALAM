@@ -374,6 +374,8 @@ https://www.mongodb.com/docs/manual/core/map-reduce/
     ```
 
     2.findOne()
+
+    After looking the code i understand that it used regex with some parameters like limit, batchsize etc. to find the data
     ```
     function (query, fields, options, readConcern, collation) {
     var cursor = this.find(query, fields, -1 /* limit */, 0 /* skip*/, 0 /* batchSize */, options);
@@ -398,6 +400,8 @@ https://www.mongodb.com/docs/manual/core/map-reduce/
     ```
 
     3.stats()
+
+    Here after exploring stats code i understand that first it check some kind of comatibility then it get some details and filter some to give us the results at the end.
     ```
     function (args) {
     'use strict';
