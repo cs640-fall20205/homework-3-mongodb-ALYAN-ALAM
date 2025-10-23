@@ -222,8 +222,14 @@ Complete the "Find" homework in Day 2.
 1. Find a shortcut for admin commands. Write the shortcut here.
 
 
+
 2. Find the online documentation for queries and cursors. Write the URL here.
 
+```
+https://www.mongodb.com/docs/manual/reference/method/js-cursor/?utm_source=chatgpt.com#cursor-methods
+
+https://www.mongodb.com/docs/manual/crud/#mongodb-crud-operations
+```
 
 3. Find the MongoDB documentation for mapreduce. Write the URL here.
 
