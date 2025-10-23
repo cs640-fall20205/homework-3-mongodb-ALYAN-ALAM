@@ -201,6 +201,11 @@ db.books.find( { genre: "Fiction" }, { author: 1, _id: 0 } );
 
 3. Write a query to find the names of all patrons who owe fines (fines greater than $0).
 
+```
+db.patrons.find( { fines: { $gt: 0 } }, { name: 1, _id: 0 } );
+```
+![alt text](image-3.png)
+
 4. Write a query to find the names and membership date of all patrons who became members in the year 2024.
 
 Hint: Use $gte and $lt operators to specify a date range from January 1, 2024 to January 1, 2025.
