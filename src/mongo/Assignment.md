@@ -53,12 +53,139 @@ For this assignment, you will be working with the two collections described belo
 
 ### Step 2: Insert Books into the Library
 Insert six of your favorite books into the library.  Make sure that these are your favorite books, not randomly generated books.
+```
+db.books.insertOne({
+  title: "Mindset",
+  author: "Carol S. Dweck",
+  isbn: "9780451524935",
+  genre: "Fiction",
+  publishedYear: 1949,
+  copiesAvailable: 3,
+  totalCopies: 5
+});
+
+
+db.books.insertOne({
+  title: "Getting Things Done",
+  author: "Yuval Noah Harari",
+  isbn: "9780062316097",
+  genre: "Non-Fiction",
+  publishedYear: 2011,
+  copiesAvailable: 0,
+  totalCopies: 4
+});
+
+
+db.books.insertOne({
+  title: "The Hobbit",
+  author: "J.R.R. Tolkien",
+  isbn: "9780547928227",
+  genre: "Fiction",
+  publishedYear: 1937,
+  copiesAvailable: 2,
+  totalCopies: 4
+});
+
+db.books.insertOne({
+  title: "Eat That Frog!",
+  author: "Tara Westover",
+  isbn: "9780399590504",
+  genre: "Non-Fiction",
+  publishedYear: 2018,
+  copiesAvailable: 1,
+  totalCopies: 2
+});
+
+
+db.books.insertOne({
+  title: "Deep Work",
+  author: "J.D. Salinger",
+  isbn: "9780316769488",
+  genre: "Fiction",
+  publishedYear: 1951,
+  copiesAvailable: 0,
+  totalCopies: 3
+});
+
+
+db.books.insertOne({
+  title: "Atomic Habits",
+  author: "James Clear",
+  isbn: "9780735211292",
+  genre: "Non-Fiction",
+  publishedYear: 2018,
+  copiesAvailable: 4,
+  totalCopies: 5
+});
+
+```
 
 ### Step 3: Insert Patrons into the Library
 Insert five of your friends as patrons into the library. Make sure that these are not randomly generated.
 
+```
+db.patrons.insertOne({
+  name: "Alyan Alam",
+  email: "alyan.alam@example.com",
+  membershipDate: new Date("2004-05-20"),
+  booksCheckedOut: [
+    { title: "Mindset", dueDate: new Date("2025-10-25") },
+    { title: "The Hobbit", dueDate: new Date("2025-11-01") }
+  ],
+  fines: 0
+});
+
+db.patrons.insertOne({
+  name: "Sara Khan",
+  email: "sara.khan@example.com",
+  membershipDate: new Date("2024-03-10"),
+  booksCheckedOut: [
+    { title: "Getting Things Done", dueDate: new Date("2025-09-30") }
+  ],
+  fines: 0
+});
+
+db.patrons.insertOne({
+  name: "Omar Malik",
+  email: "omar.malik@example.com",
+  membershipDate: new Date("2022-08-15"),
+  booksCheckedOut: [
+    { title: "Eat That Frog!", dueDate: new Date("2025-09-01") }
+  ],
+  fines: 10.50
+});
+
+db.patrons.insertOne({
+  name: "Noor Fatima",
+  email: "noor.fatima@example.com",
+  membershipDate: new Date("2023-02-14"),
+  booksCheckedOut: [
+    { title: "Deep Work", dueDate: new Date("2025-10-15") }
+  ],
+  fines: 0
+});
+
+db.patrons.insertOne({
+  name: "Hamza Ali",
+  email: "hamza.ali@example.com",
+  membershipDate: new Date("2024-07-19"),
+  booksCheckedOut: [
+    { title: "Atomic Habits", dueDate: new Date("2025-11-02") }
+  ],
+  fines: 0
+});
+```
+
+
+
 ### Step 4: Queries
 For each of the queries below, write the query and include the results.
+
+```
+db.books.find( { copiesAvailable: { $gte: 1 } }, { title: 1, _id: 0 } );
+```
+
+![alt text](image-1.png)
 
 1. Write a query to find the titles of all books that have at least one copy available for checkout.
 
