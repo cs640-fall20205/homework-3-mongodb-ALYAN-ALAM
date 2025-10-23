@@ -233,6 +233,9 @@ https://www.mongodb.com/docs/manual/crud/#mongodb-crud-operations
 
 3. Find the MongoDB documentation for mapreduce. Write the URL here.
 
+```
+https://www.mongodb.com/docs/manual/core/map-reduce/
+```
 
 4. Through the JavaScript interface, investigate the code for three collections
     functions: help(), findOne(), and stats(). Past the code for each below.
