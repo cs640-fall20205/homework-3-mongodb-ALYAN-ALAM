@@ -181,15 +181,23 @@ db.patrons.insertOne({
 ### Step 4: Queries
 For each of the queries below, write the query and include the results.
 
+1. Write a query to find the titles of all books that have at least one copy available for checkout.
+
+
 ```
 db.books.find( { copiesAvailable: { $gte: 1 } }, { title: 1, _id: 0 } );
 ```
 
 ![alt text](image-1.png)
 
-1. Write a query to find the titles of all books that have at least one copy available for checkout.
 
 2. Write a query to find the authors of all books in the "Fiction" genre.
+
+```
+db.books.find( { genre: "Fiction" }, { author: 1, _id: 0 } );
+
+```
+![alt text](image-2.png)
 
 3. Write a query to find the names of all patrons who owe fines (fines greater than $0).
 
