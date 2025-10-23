@@ -221,6 +221,9 @@ Complete the "Find" homework in Day 2.
 
 1. Find a shortcut for admin commands. Write the shortcut here.
 
+```
+    db.adminCommand(command)
+```
 
 
 2. Find the online documentation for queries and cursors. Write the URL here.
