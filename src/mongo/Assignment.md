@@ -244,6 +244,9 @@ https://www.mongodb.com/docs/manual/core/map-reduce/
 
     1.help()
 
+    From the code the first thing i understand is that we store db name in shortname which we retrive using getName().
+    Rest we have print statements which display the command and its brief discription.
+
     ```
     function () {
     var shortName = this.getName();
